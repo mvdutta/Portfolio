@@ -13,7 +13,7 @@ const Home = () => {
         <h1 className="text-4xl sm:text-6xl text-slate-300">
           Hi, I'm <span className="text-[#EA5955]">Maia Dutta</span>
         </h1>
-        <p className="text-slate-300 text-3xl py-4 max-w[700px]">
+        <p className="text-slate-300 text-2xl sm:text-3xl py-4 max-w[700px]">
           A full-stack software developer located in Nashville, TN.
         </p>
         <div>
