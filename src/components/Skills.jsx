@@ -8,14 +8,17 @@ import CSS from "../assets/css.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300 ">
+    <div
+      name="skills"
+      className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-900 text-gray-300 font-comme"
+    >
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full text-stone-300 font-comme">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
+          <p className="text-4xl font-semibold inline border-b-4 border-[#EA5955] ">
             Skills
           </p>
-          <p className="py-4">// These are the technologies I've worked with</p>
+          <p className="py-4">These are the technologies I've worked with</p>
         </div>
         <div className="w-full grid grid-cols-4 sm:grid-cols-4 gap-4 text-center py-8">
           <div className="shadow-md shadow-[#040c16] hover:scale-105 duration-500">
