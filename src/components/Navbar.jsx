@@ -9,7 +9,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-12 bg-gradient-to-r from-slate-950 to-teal-950 text-gray-300 font-comme">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-16 text-gray-300 font-comme">
       <div>
         <img src={Logo} alt="logo image" className="w-[50px] mt-8" />
       </div>
@@ -97,9 +97,9 @@ const Navbar = () => {
       </div>
 
       {/* Social Menu */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[40%] left-0">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#f76a67]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="/"
