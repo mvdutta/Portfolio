@@ -2,19 +2,19 @@ import {useState} from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import Logo from '../assets/MVD-Logo5.png'
+import Logo from '../assets/MVD-Logo7.png'
 import {Link} from 'react-scroll'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
   return (
-    <div className="sticky z-40 w-full h-[80px] top-0 flex items-center justify-between font-comme text-gray-300 bg-gradient-to-br from-slate-950 to-stone-900">
+    <div className="sticky z-40 w-full h-[85px] top-0 flex items-center justify-between font-comme text-gray-300 bg-gradient-to-br from-slate-950 to-stone-950">
       <div>
         <img
           src={Logo}
           alt="logo image"
-          className="w-[250px] mt-8 sm:mt-12 -mr-[125px] sm:-mr-20"
+          className="w-20 mt-6 ml-4 sm:ml-20 pb-4"
         />
       </div>
       {/* Menu */}
@@ -50,7 +50,7 @@ const Navbar = () => {
 
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10 mr-8">
-        {nav ? <FaTimes /> : <FaBars />}
+        {nav ? <FaTimes /> : <FaBars size='35'/>}
       </div>
 
       {/* Mobile Menu */}
@@ -58,7 +58,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-900 flex flex-col justify-center items-center font-comme"
+            : "absolute top-0 left-0 w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 flex flex-col justify-center items-center font-comme"
         }
       >
         <ul>

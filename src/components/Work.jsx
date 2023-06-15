@@ -8,7 +8,7 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="bg-gradient-to-br from-slate-950 to-stone-900 w-full md:h-screen text-gray-300 font-comme"
+      className="bg-gradient-to-br from-slate-950 to-stone-950 w-full md:h-screen text-gray-300 font-comme"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">

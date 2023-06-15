@@ -19,7 +19,6 @@ function App() {
         <Skills />  
         <Work />   
         <Contact />
-       <ChangingText />
       </div>
     </>
   );
