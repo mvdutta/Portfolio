@@ -2,19 +2,19 @@ import {useState} from 'react'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import Logo from '../assets/MVD-Logo3.png'
+import Logo from '../assets/MVD-Logo5.png'
 import {Link} from 'react-scroll'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-16 text-gray-300 font-comme">
+    <div className="fixed w-full h-[80px] flex justify-between items-center text-gray-300 font-comme">
       <div>
-        <img src={Logo} alt="logo image" className="w-[50px] mt-8" />
+        <img src={Logo} alt="logo image" className="w-[250px] mt-8 sm:mt-20 -mr-[125px] sm:-mr-20" />
       </div>
       {/* Menu */}
-      <div className="text-lg">
+      <div className="text-lg mr-24">
         <ul className="hidden md:flex">
           <li>
             <Link to="home" smooth={true} duration={500}>
@@ -45,7 +45,7 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="md:hidden z-10 mr-8">
         {nav ? <FaTimes /> : <FaBars />}
       </div>
 

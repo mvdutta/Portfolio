@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
+import ChangingText from "./utilities/ChangingText";
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         <Skills />  
         <Work />   
         <Contact />
+       <ChangingText />
       </div>
     </>
   );
