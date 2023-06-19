@@ -8,11 +8,11 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="bg-gradient-to-br from-slate-950 to-stone-900 w-full md:h-screen text-gray-300 font-comme"
+      className="pt-40 bg-gradient-to-br from-slate-950 to-stone-950 w-full sm:h-screen text-gray-300 font-comme"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-semibold inline border-b-4 text-gray-300 border-[#EA5955]">
+          <p className="text-4xl font-semibold inline border-b-4 text-gray-300 border-[#00d6fe]">
             Work
           </p>
           <p className="py-6">Check out my recent projects</p>
@@ -30,12 +30,20 @@ const Work = () => {
                 React JS Application
               </span>
               <div className="pt-8 text-center ">
-                <a href="/">
+                <a
+                  href="https://weight-tracking-client.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a
+                  href="https://github.com/mvdutta/weight-tracking-client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
@@ -45,7 +53,7 @@ const Work = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${realEstate})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div mb-40"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
@@ -53,12 +61,16 @@ const Work = () => {
                 React JS Application
               </span>
               <div className="pt-8 text-center ">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                <a>
+                  <button className=" text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a
+                  href="https://github.com/mvdutta/Parkers-Pets-Capstone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
