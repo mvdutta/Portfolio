@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 
 const ChangingText = () => {
   const ATTRIBUTES = [
-    "Programmer",
+    "Software Developer",
     "Tea Drinker",
     "Creator",
     "Problem Solver",
     "Collaborator",
-    "Dietitian",
-    "Curious Learner",
-    "Meditator",
+    "Registered Dietitian",
+    "Lifelong Learner",
+    "Outdoor Enthusiast",
     "Traveler",
     "Godzilla Fan"
   ];

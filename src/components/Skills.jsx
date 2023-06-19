@@ -13,12 +13,12 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 text-gray-300 font-comme"
+      className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 text-gray-300 font-comme pt-40"
     >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full text-stone-300 font-comme">
         <div>
-          <p className="text-4xl font-semibold inline border-b-4 border-[#EA5955] ">
+          <p className="text-4xl font-semibold inline border-b-4 border-[#00d6fe] ">
             Skills
           </p>
           <p className="py-4">These are the technologies I've worked with</p>
@@ -57,11 +57,7 @@ const Skills = () => {
             <p className="my-4">Github</p>
           </div>
           <div className="bg-gradient-to-tr from-slate-900 to-stone-950 shadow-md shadow-stone-800 hover:scale-105 duration-500">
-            <img
-              className="w-20 mx-auto pt-4"
-              src={Python}
-              alt="Python Icon"
-            />
+            <img className="w-20 mx-auto pt-4" src={Python} alt="Python Icon" />
             <p className="my-4">Python</p>
           </div>
           <div className="bg-gradient-to-tr from-slate-900 to-stone-950 shadow-md shadow-stone-800 hover:scale-105 duration-500">
@@ -73,11 +69,7 @@ const Skills = () => {
             <p className="my-4 mt-8">Django</p>
           </div>
           <div className="bg-gradient-to-tr from-slate-900 to-stone-950 shadow-md shadow-stone-800 hover:scale-105 duration-500">
-            <img
-              className="w-20 mx-auto pt-2"
-              src={SQL}
-              alt="SQL Icon"
-            />
+            <img className="w-20 mx-auto pt-2" src={SQL} alt="SQL Icon" />
             <p className="my-4">SQL</p>
           </div>
         </div>
