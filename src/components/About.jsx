@@ -21,7 +21,7 @@ const About = () => {
           <div className="text-xl sm:text-2xl text-[#e5d8af] mb-4 sm:mb-12 flex justify-items-center">
             <ChangingText />
           </div>
-          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-4 px-3">
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-4 md:gap-0 px-3">
             <div className="flex flex-col items-center text-center sm:text-right text-2xl sm:text-3xl font-light">
               <p>Hello, nice to meet you!</p>
               <img
@@ -30,7 +30,7 @@ const About = () => {
                 className=" w-48 h-48 sm:w-[300px] sm:h-[300px] mb-6 mt-6 sm:mt-8 rounded-full"
               />
             </div>
-            <div className="h-[150px] px-2 overflow-y-scroll sm:w-full pl-10 sm:h-full -mt-4 sm:mt-0 sm:pt-2 sm:text-lg">
+            <div className="h-[150px] md:h-[390px] px-2 overflow-y-scroll sm:w-full pl-10 lg:h-full -mt-4 sm:mt-0 sm:pt-2 sm:text-lg">
               <p>
                 I'm a software developer with a diverse background in biology,
                 food-service management, and clinical dietetics. While working

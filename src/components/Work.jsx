@@ -30,12 +30,20 @@ const Work = () => {
                 React JS Application
               </span>
               <div className="pt-8 text-center ">
-                <a href="/">
+                <a
+                  href="https://weight-tracking-client.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a
+                  href="https://github.com/mvdutta/weight-tracking-client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
@@ -53,12 +61,16 @@ const Work = () => {
                 React JS Application
               </span>
               <div className="pt-8 text-center ">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                <a>
+                  <button className=" text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a
+                  href="https://github.com/mvdutta/Parkers-Pets-Capstone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
