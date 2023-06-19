@@ -40,7 +40,7 @@ const Contact = () => {
             placeholder="Message"
           ></textarea>
           <button className="text-white border-2 border-[#00d6fe] hover:bg-gradient-to-l from-[#00d6fe] to-[#2999ad] hover:border-1 px-4 py-3 mt-8 mx-auto flex items-center rounded-md">
-            Let's Collaborate
+            Let's Connect!
           </button>
         </form>
       

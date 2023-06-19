@@ -16,11 +16,11 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="logo image"
-          className="w-16 sm:w-20 mt-6 ml-4 sm:ml-[75px] pb-4"
+          className="w-16 sm:w-20 mt-6 ml-4 sm:ml-[45px] pb-4"
         />
       </div>
       {/* Menu */}
-      <div className="text-lg mr-24">
+      <div className="text-lg mr-10">
         <ul className="hidden md:flex">
           <li>
             <Link to="home" smooth={true} duration={500}>

@@ -7,30 +7,32 @@ const About = () => {
     <>
       <div
         name="about"
-        className="w-full h-screen bg-gradient-to-br from-slate-950 to-stone-950 text-gray-300 font-comme"
+        className="w-full h-screen bg-gradient-to-br from-slate-950 to-stone-950 text-gray-300 font-comme pt-20"
       >
-        <div className="flex flex-col justify-center items-center w-full h-full">
-          <div className=" w-full flex justify-center">
-            <div className="sm:text-right pb-6 sm:pb-8">
+        <div className="flex flex-col sm:justify-center sm:items-center w-full h-full px-4">
+          <div className=" w-full flex sm:justify-center">
+            <div className="sm:text-right pb-6">
               <p className="text-4xl font-semibold inline border-b-4 border-[#00d6fe]">
                 About
               </p>
             </div>
             <div></div>
           </div>
-          <div className="text-xl sm:text-2xl text-[#e5d8af] mb-4 sm:mb-12 flex justify-items-center">
+          <div className="text-xl sm:text-2xl mb-2 sm:mb-10 sm:mt-6">
             <ChangingText />
           </div>
-          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-4 md:gap-0 px-3">
-            <div className="flex flex-col items-center text-center sm:text-right text-2xl sm:text-3xl font-light">
-              <p>Hello, nice to meet you!</p>
+          <div className="max-w-[725px] lg:max-w-[1000px] w-full grid sm:grid-cols-2 sm:gap-6 lg:gap-0">
+            <div className="flex flex-col sm:items-center sm:text-center ">
               <img
                 src={camel}
                 alt="camel photo"
-                className=" w-48 h-48 sm:w-[300px] sm:h-[300px] mb-6 mt-6 sm:mt-8 rounded-full"
+                className=" w-48 h-48 sm:w-[375px] sm:h-[375px] mb-6 mt-2 rounded-lg"
               />
             </div>
-            <div className="h-[150px] md:h-[390px] px-2 overflow-y-scroll sm:w-full pl-10 lg:h-full -mt-4 sm:mt-0 sm:pt-2 sm:text-lg">
+            <div className="h-[150px] md:h-[440px] sm:px-2 overflow-y-scroll sm:w-full sm:pl-0 lg:h-full sm:text-lg">
+              <p className="text-[#00d6fe] mb-4 text-2xl sm:text-3xl font-light">
+                Hello, nice to meet you!
+              </p>
               <p>
                 I'm a software developer with a diverse background in biology,
                 food-service management, and clinical dietetics. While working

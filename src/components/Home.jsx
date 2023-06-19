@@ -12,7 +12,7 @@ const Home = () => {
       className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 font-comme"
     >
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+      <div className="max-w-[1000px] mx-auto pl-4 sm:pr-8 flex flex-col justify-center h-full">
         <h1 className="text-4xl sm:text-5xl text-slate-300">
           Hi, I'm <span className="text-[#00d6fe]">Maia Dutta</span>
         </h1>
