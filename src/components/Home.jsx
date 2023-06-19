@@ -2,9 +2,16 @@ import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import '.././index.css'
 import camel from "../assets/camel-pic1.jpeg";
-import { Link } from "react-scroll";
+import { Link, scroller} from "react-scroll";
 
 const Home = () => {
+  const scrollToWork = () => {
+    scroller.scrollTo('work', {
+  duration: 500,
+  smooth: true
+})
+
+  }
   return (
     <div
       name="home"
@@ -19,14 +26,12 @@ const Home = () => {
           A full-stack software developer located in Nashville, TN.
         </p>
         <div>
-          <button className="relative text-white group shadow-sm px-6 py-3 my-2 rounded-md flex items-center hover:bg-gradient-to-l from-[#00d6fe] to-[#2999ad] hover:border-1 hover:border-[#2999ad]">
+          <button className="relative text-white group shadow-sm px-6 py-3 my-2 rounded-md flex items-center hover:bg-gradient-to-l from-[#00d6fe] to-[#2999ad] hover:border-1 hover:border-[#2999ad]" onClick={scrollToWork}>
             <div className="absolute z-0 inset-0 w-full h-full ring-2 ring-[#00d6fe] rounded-md animate-pulse ring-opacity-80"></div>
             <span>View My Work</span>
-            <span className="group-hover:rotate-90 duration-300">
-              <Link to="about" smooth={true} duration={500}>
+              <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-3" />
-              </Link>
-            </span>
+              </span>
           </button>
         </div>
       </div>
