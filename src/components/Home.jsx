@@ -2,6 +2,7 @@ import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import '.././index.css'
 import camel from "../assets/camel-pic1.jpeg";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -22,7 +23,9 @@ const Home = () => {
             <div className="absolute z-0 inset-0 w-full h-full ring-2 ring-[#00d6fe] rounded-md animate-pulse ring-opacity-80"></div>
             <span>View My Work</span>
             <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
+              <Link to="about" smooth={true} duration={500}>
+                <HiArrowNarrowRight className="ml-3" />
+              </Link>
             </span>
           </button>
         </div>
