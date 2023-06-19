@@ -11,7 +11,7 @@ const About = () => {
       >
         <div className="flex flex-col sm:justify-center sm:items-center w-full h-full px-4">
           <div className=" w-full flex sm:justify-center">
-            <div className="sm:text-right pb-6">
+            <div className="sm:text-right pb-6  sm:pb-4">
               <p className="text-4xl font-semibold inline border-b-4 border-[#00d6fe]">
                 About
               </p>
@@ -26,11 +26,11 @@ const About = () => {
               <img
                 src={camel}
                 alt="camel photo"
-                className=" w-48 h-48 sm:w-[375px] sm:h-[375px] mb-6 mt-2 rounded-lg"
+                className=" w-48 h-48 sm:w-[375px] sm:h-[375px] lg:w-[420px] lg:h-[425px] mb-6 mt-4 sm:mt-2 rounded-lg"
               />
             </div>
-            <div className="h-[150px] md:h-[440px] sm:px-2 overflow-y-scroll sm:w-full sm:pl-0 lg:h-full sm:text-lg">
-              <p className="text-[#00d6fe] mb-4 text-2xl sm:text-3xl font-light">
+            <div className="h-[150px] md:h-[390px] sm:px-2 overflow-y-scroll sm:w-full sm:pl-0 lg:h-full sm:text-lg">
+              <p className="text-[#00d6fe] mb-4 text-2xl font-light">
                 Hello, nice to meet you!
               </p>
               <p>
