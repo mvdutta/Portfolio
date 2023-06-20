@@ -1,8 +1,10 @@
 import React from 'react'
 import wttracker from "../assets/WeightTracker.png"
-import workImg from "../assets/workImg.jpeg";
-import realestate from "../assets/realestate.jpg";
-import weightTracker from "../assets/wt3.png";
+// import workImg from "../assets/workImg.jpeg";
+// import realestate from "../assets/realestate.jpg";
+// import weightTracker from "../assets/wt3.png";
+import project1 from "../assets/wt3.png";
+import project2 from "../assets/wt3.png";
 
 
 
@@ -23,7 +25,7 @@ const Work = () => {
         <div className="grid sm:grid-cols-2  gap-6">
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${workImg})` }}
+            style={{ backgroundImage: `url(${project1})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -54,7 +56,7 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${realestate})` }}
+            style={{ backgroundImage: `url(${project2})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div mb-40"
           >
             {/* Hover Effects */}
