@@ -16,7 +16,8 @@ const Navbar = () => {
         <img
           src={Logo}
           alt="logo image"
-          className="w-16 sm:w-20 mt-6 ml-4 sm:ml-[45px] pb-4"
+          className="w-16 sm:w-20 mt-6 ml-4 sm:ml-[45px] pb-4 hover:cursor-pointer"
+          onClick={()=>{scrollToLocation("home")}}
         />
       </div>
       {/* Menu */}
