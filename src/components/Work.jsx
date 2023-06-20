@@ -1,7 +1,8 @@
 import React from 'react'
-import realEstate from "../assets/realestate.jpg";
-import workImg from "../assets/workImg.jpeg";
 import wttracker from "../assets/WeightTracker.png"
+import workImg from "../assets/workImg.jpeg";
+import realestate from "../assets/realestate.jpg";
+import weightTracker from "../assets/wt3.png";
 
 
 
@@ -11,18 +12,18 @@ const Work = () => {
       name="work"
       className="pt-40 bg-gradient-to-br from-slate-950 to-stone-950 w-full sm:h-screen text-gray-300 font-comme"
     >
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="sm:max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-semibold inline border-b-4 text-gray-300 border-[#00d6fe]">
             Work
           </p>
-          <p className="py-6">Check out my recent projects</p>
+          <p className="py-4">Check out my recent projects</p>
         </div>
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2  gap-6">
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${wttracker})` }}
+            style={{ backgroundImage: `url(${workImg})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -53,7 +54,7 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${wttracker})` }}
+            style={{ backgroundImage: `url(${realestate})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div mb-40"
           >
             {/* Hover Effects */}

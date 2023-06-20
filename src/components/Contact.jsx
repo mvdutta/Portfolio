@@ -42,7 +42,7 @@ const Contact = () => {
             rows="7"
             placeholder="Message"
           ></textarea>
-          <button className="text-white border-2 border-[#00d6fe] hover:bg-gradient-to-l from-[#00d6fe] to-[#2999ad] hover:border-1 px-4 py-3 my-8 mx-auto flex items-center rounded-md">
+          <button className="text-white border-2 border-[#00d6fe] hover:bg-gradient-to-l from-[#00d6fe] to-[#2999ad] hover:border-1 px-4 py-3 my-6 mx-auto flex items-center rounded-md">
             Let's Connect!
           </button>
           <div className="flex justify-center gap-4 sm:pb-20 lg:hidden">
@@ -64,16 +64,6 @@ const Contact = () => {
                 rel="noopener noreferrer"
               >
                 <FaGithub size={30} />
-              </a>
-            </div>
-            <div>
-              <a
-                className="flex justify-between items-center w-full text-gray-300"
-                onClick={() => {
-                  scrollToLocation("contact");
-                }}
-              >
-                <HiOutlineMail size={30} />
               </a>
             </div>
             <div>
