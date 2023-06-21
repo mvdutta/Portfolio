@@ -7,9 +7,10 @@ const Contact = () => {
 
   return (
     <>
+      <div className="sm:hidden py-36 bg-gradient-to-tr from-slate-950 to-stone-950 "></div>
       <div
         name="contact"
-        className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 flex justify-center items-center p-4 text-stone-300 font-comme pt-20 sm:pb-20"
+        className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 flex justify-center items-center p-4 text-stone-300 font-comme pt-28 sm:pt-0 sm:pb-20"
       >
         <form
           method="POST"

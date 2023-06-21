@@ -2,9 +2,8 @@ import React from 'react'
 import wttracker from "../assets/WeightTracker.png"
 // import workImg from "../assets/workImg.jpeg";
 // import realestate from "../assets/realestate.jpg";
-// import weightTracker from "../assets/wt3.png";
 import project1 from "../assets/wt3.png";
-import project2 from "../assets/wt3.png";
+import project2 from "../assets/parker2.png";
 
 
 
@@ -12,7 +11,7 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="pt-40 bg-gradient-to-br from-slate-950 to-stone-950 w-full sm:h-screen text-gray-300 font-comme"
+      className="pt-96 sm:pt-20 bg-gradient-to-br from-slate-950 to-stone-950 w-full h-screen text-gray-300 font-comme"
     >
       <div className="sm:max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -57,7 +56,7 @@ const Work = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${project2})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div mb-40"
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
@@ -83,6 +82,7 @@ const Work = () => {
             </div>
           </div>
         </div>
+        <div className='mb-60'></div>
       </div>
     </div>
   );
