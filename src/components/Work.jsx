@@ -22,7 +22,7 @@ const Work = () => {
           <p className="py-4">Check out my recent projects</p>
         </div>
         {/* Container */}
-        <div className="grid sm:grid-cols-2  gap-6">
+        <div className="grid sm:grid-cols-2 gap-4">
           {/* Grid Item */}
           <div
             style={{ backgroundImage: `url(${project1})` }}
