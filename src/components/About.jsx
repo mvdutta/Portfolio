@@ -39,9 +39,17 @@ const About = () => {
                 as a dietitian, I needed a nutrition calculator so I could spend
                 less time performing calculations, and more time with patients.
                 I couldn't find a suitable one, so I learned the basics of
-                programming and built one myself! After that, I fell in love
-                with programming and ultimately switched careers to become a
-                software developer.
+                programming and{" "}
+                <a
+                  href="https://mvdutta.github.io/metabolic-calculator/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#9cdeea] underline"
+                >
+                  built one myself!
+                </a>{" "}
+                After that, I fell in love with programming and ultimately
+                switched careers to become a software developer.
               </p>
               <p>
                 I take pride in delivering high-quality solutions that meet the
