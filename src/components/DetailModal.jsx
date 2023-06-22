@@ -1,6 +1,6 @@
 import React from 'react'
 import close from "../assets/close-icon3.png";
-import { CgCloseR } from "react-icons/Cg";
+import { CgCloseR } from "react-icons/cg";
 
 const DetailModal = ({showModal, setShowModal, modalContent}) => {
       return (
