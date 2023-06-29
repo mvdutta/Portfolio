@@ -17,34 +17,36 @@ const Navbar = () => {
           src={Logo}
           alt="logo image"
           className="w-16 sm:w-20 mt-6 ml-4 sm:ml-[45px] pb-4 hover:cursor-pointer"
-          onClick={()=>{scrollToLocation("home")}}
+          onClick={() => {
+            scrollToLocation("home");
+          }}
         />
       </div>
       {/* Menu */}
       <div className="text-lg mr-10">
         <ul className="hidden md:flex">
           <li>
-            <Link to="home" smooth={true} duration={500}>
+            <Link to="home" smooth={true} duration={500} isDynamic={true}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="about" smooth={true} duration={500}>
+            <Link to="about" smooth={true} duration={500} isDynamic={true}>
               About
             </Link>
           </li>
           <li>
-            <Link to="skills" smooth={true} duration={500}>
+            <Link to="skills" smooth={true} duration={500} isDynamic={true}>
               Skills
             </Link>
           </li>
           <li>
-            <Link to="work" smooth={true} duration={500}>
+            <Link to="work" smooth={true} duration={500} isDynamic={true}>
               Work
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500} offset={-200}>
+            <Link to="contact" smooth={true} duration={500} offset={-100} isDynamic={true}>
               Contact
             </Link>
           </li>

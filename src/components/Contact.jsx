@@ -7,10 +7,10 @@ const Contact = () => {
 
   return (
     <>
-      <div className="sm:hidden py-36 bg-gradient-to-tr from-slate-950 to-stone-950 "></div>
+      {/* <div className="sm:hidden py-36 bg-gradient-to-tr from-slate-950 to-stone-950 "></div> */}
       <div
         name="contact"
-        className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 flex justify-center items-center p-4 text-stone-300 font-comme pt-28 sm:pt-0 sm:pb-20"
+        className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 flex justify-center items-center p-4 text-stone-300 font-comme pt-20"
       >
         <form
           method="POST"
@@ -46,7 +46,7 @@ const Contact = () => {
           <button className="text-white border-2 border-[#00d6fe] hover:bg-gradient-to-l from-[#00d6fe] to-[#2999ad] hover:border-1 px-4 py-3 my-6 mx-auto flex items-center rounded-md">
             Let's Connect!
           </button>
-          <div className="flex justify-center gap-4 sm:pb-20 lg:hidden">
+          <div className="flex justify-center gap-4 lg:hidden">
             <div>
               <a
                 className="flex justify-between items-center w-full text-gray-300"
