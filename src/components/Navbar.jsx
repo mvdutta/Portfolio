@@ -50,7 +50,7 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-75}
               isDynamic={true}
             >
               Contact
