@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div
         name="about"
-        className="w-full h-screen bg-gradient-to-br from-slate-950 to-stone-950 text-gray-300 font-comme pt-28"
+        className="w-full h-screen bg-stone-950 text-gray-300 font-comme pt-28 md:pt-0"
       >
         <div className="flex flex-col sm:justify-center sm:items-center w-full h-full px-4">
           <div className=" w-full flex sm:justify-center">
@@ -28,7 +28,7 @@ const About = () => {
                 className=" w-48 h-48 sm:w-[375px] sm:h-[375px] lg:w-[420px] lg:h-[425px] mb-6 mt-4 sm:mt-2 rounded-lg"
               />
             </div>
-            <div className=" h-[300px] md:h-[390px] sm:px-2 overflow-y-scroll sm:w-full lg:h-full sm:text-lg">
+            <div className=" h-[300px] sm:h-[390px] sm:px-2 overflow-y-scroll sm:w-full lg:h-full sm:text-lg">
               <p className="text-[#00d6fe] mb-4 text-2xl font-light">
                 Hello, nice to meet you!
               </p>

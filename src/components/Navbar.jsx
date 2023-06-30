@@ -11,7 +11,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
     
   return (
-    <div className="sticky z-40 w-full h-[85px] top-0 flex items-center justify-between font-comme text-gray-300 bg-gradient-to-br from-slate-950 to-stone-950">
+    <div className="sticky z-40 w-full h-[85px] top-0 flex items-center justify-between font-comme text-gray-300  bg-stone-950">
       <div>
         <img
           src={Logo}
@@ -46,7 +46,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500} offset={-100} isDynamic={true}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              isDynamic={true}
+            >
               Contact
             </Link>
           </li>

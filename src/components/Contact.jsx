@@ -10,7 +10,7 @@ const Contact = () => {
       {/* <div className="sm:hidden py-36 bg-gradient-to-tr from-slate-950 to-stone-950 "></div> */}
       <div
         name="contact"
-        className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 flex justify-center items-center p-4 text-stone-300 font-comme pt-20"
+        className="w-full h-screen bg-stone-950 flex justify-center items-center p-4 text-stone-300 font-comme pt-20 lg-pt-0 mt-40 lg-mt-0"
       >
         <form
           method="POST"

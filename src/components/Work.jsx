@@ -15,7 +15,7 @@ const Work = () => {
     <>
       <div
         name="work"
-        className="bg-gradient-to-br from-slate-950 to-stone-950 w-full h-screen text-gray-300 font-comme pt-72 pb-40"
+        className=" bg-stone-950 w-full h-screen text-gray-300 font-comme pt-72 md:pt-0 pb-40 md:pb-0"
       >
         <div className="sm:max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
           <div className="pb-8">
