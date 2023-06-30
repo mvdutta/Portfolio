@@ -1,8 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ChangingText from '../utilities/ChangingText';
 import camel from "../assets/camel-pic1.jpeg";
 
 const About = () => {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+    function handleWindowResize() {
+        setWindowSize(getWindowSize());
+      }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  const findWidthValue = () => {
+    const sz1 = 415
+    const sz2 = 640
+    if (windowSize.innerWidth<sz1) return "h-[300px] "
+    if (windowSize.innerWidth>=sz1 && windowSize.innerWidth < sz2) return "h-[500px] "
+    if (windowSize.innerWidth >= sz2) return "h-[390px] ";
+  }
+
+  
+
   return (
     <>
       <div
@@ -28,7 +54,7 @@ const About = () => {
                 className=" w-48 h-48 sm:w-[375px] sm:h-[375px] lg:w-[420px] lg:h-[425px] mb-6 mt-4 sm:mt-2 rounded-lg"
               />
             </div>
-            <div className=" h-[300px] sm:h-[390px] sm:px-2 overflow-y-scroll sm:w-full lg:h-full sm:text-lg">
+            <div className={findWidthValue()+" sm:px-2 overflow-y-scroll sm:w-full lg:h-full sm:text-lg"}>
               <p className="text-[#00d6fe] mb-4 text-2xl font-light">
                 Hello, nice to meet you!
               </p>
