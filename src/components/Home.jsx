@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-screen bg-gradient-to-tr from-slate-950 to-stone-950 font-comme"
+      className="w-full h-screen bg-stone-950 font-comme"
     >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto pl-4 sm:pr-8 flex flex-col justify-center h-full">

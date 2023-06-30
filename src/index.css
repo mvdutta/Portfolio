@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 
-
+html, body{
+  background-color: #0d0a0a;
+}
 
   @layer base {
     li {

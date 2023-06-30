@@ -11,40 +11,48 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
     
   return (
-    <div className="sticky z-40 w-full h-[85px] top-0 flex items-center justify-between font-comme text-gray-300 bg-gradient-to-br from-slate-950 to-stone-950">
+    <div className="sticky z-40 w-full h-[85px] top-0 flex items-center justify-between font-comme text-gray-300  bg-stone-950">
       <div>
         <img
           src={Logo}
           alt="logo image"
           className="w-16 sm:w-20 mt-6 ml-4 sm:ml-[45px] pb-4 hover:cursor-pointer"
-          onClick={()=>{scrollToLocation("home")}}
+          onClick={() => {
+            scrollToLocation("home");
+          }}
         />
       </div>
       {/* Menu */}
       <div className="text-lg mr-10">
         <ul className="hidden md:flex">
           <li>
-            <Link to="home" smooth={true} duration={500}>
+            <Link to="home" smooth={true} duration={500} isDynamic={true}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="about" smooth={true} duration={500}>
+            <Link to="about" smooth={true} duration={500} isDynamic={true}>
               About
             </Link>
           </li>
           <li>
-            <Link to="skills" smooth={true} duration={500}>
+            <Link to="skills" smooth={true} duration={500} isDynamic={true}>
               Skills
             </Link>
           </li>
           <li>
-            <Link to="work" smooth={true} duration={500}>
+            <Link to="work" smooth={true} duration={500} isDynamic={true}>
               Work
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500} offset={-200}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-75}
+              isDynamic={true}
+            >
               Contact
             </Link>
           </li>
