@@ -1,16 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import ChangingText from '../utilities/ChangingText';
+import React, { useEffect, useState } from "react";
+import ChangingText from "../utilities/ChangingText";
 import camel from "../assets/camel-pic1.jpeg";
 
-const About = () => {
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-  function getWindowSize() {
+  const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
-  }
-    function handleWindowResize() {
-        setWindowSize(getWindowSize());
-      }
+  };
+
+
+const About = () => {
+  
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+    const handleWindowResize = () => {
+      setWindowSize(getWindowSize());
+    };
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
@@ -20,14 +24,13 @@ const About = () => {
   }, []);
 
   const findWidthValue = () => {
-    const sz1 = 415
-    const sz2 = 640
-    if (windowSize.innerWidth<sz1) return "h-[300px] "
-    if (windowSize.innerWidth>=sz1 && windowSize.innerWidth < sz2) return "h-[500px] "
+    const sz1 = 415;
+    const sz2 = 640;
+    if (windowSize.innerWidth < sz1) return "h-[300px] ";
+    if (windowSize.innerWidth >= sz1 && windowSize.innerWidth < sz2)
+      return "h-[500px] ";
     if (windowSize.innerWidth >= sz2) return "h-[390px] ";
-  }
-
-  
+  };
 
   return (
     <>
@@ -54,7 +57,12 @@ const About = () => {
                 className=" w-48 h-48 sm:w-[375px] sm:h-[375px] lg:w-[420px] lg:h-[425px] mb-6 mt-4 sm:mt-2 rounded-lg"
               />
             </div>
-            <div className={findWidthValue()+" sm:px-2 overflow-y-scroll sm:w-full lg:h-full sm:text-lg"}>
+            <div
+              className={
+                findWidthValue() +
+                " sm:px-2 overflow-y-scroll sm:w-full lg:h-full sm:text-lg"
+              }
+            >
               <p className="text-[#00d6fe] mb-4 text-2xl font-light">
                 Hello, nice to meet you!
               </p>
@@ -91,6 +99,6 @@ const About = () => {
       </div>
     </>
   );
-}
+};
 
-export default About
+export default About;
