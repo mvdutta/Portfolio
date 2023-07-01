@@ -60,7 +60,7 @@ const About = () => {
             <div
               className={
                 findWidthValue() +
-                " sm:px-2 overflow-y-scroll sm:w-full lg:h-full sm:text-lg"
+                "sm:px-2 overflow-y-scroll scrollbar sm:w-full lg:h-full sm:text-lg"
               }
             >
               <p className="text-[#00d6fe] mb-4 text-2xl font-light">
