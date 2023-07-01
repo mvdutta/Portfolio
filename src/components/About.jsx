@@ -1,13 +1,42 @@
-import React from 'react'
-import ChangingText from '../utilities/ChangingText';
+import React, { useEffect, useState } from "react";
+import ChangingText from "../utilities/ChangingText";
 import camel from "../assets/camel-pic1.jpeg";
 
+  const getWindowSize = () => {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  };
+
+
 const About = () => {
+  
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+    const handleWindowResize = () => {
+      setWindowSize(getWindowSize());
+    };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  const findWidthValue = () => {
+    const sz1 = 415;
+    const sz2 = 640;
+    if (windowSize.innerWidth < sz1) return "h-[300px] ";
+    if (windowSize.innerWidth >= sz1 && windowSize.innerWidth < sz2)
+      return "h-[500px] ";
+    if (windowSize.innerWidth >= sz2) return "h-[390px] ";
+  };
+
   return (
     <>
       <div
         name="about"
-        className="w-full h-screen bg-gradient-to-br from-slate-950 to-stone-950 text-gray-300 font-comme pt-20 sm:pt-0"
+        className="w-full h-screen bg-stone-950 text-gray-300 font-comme pt-28 md:pt-0"
       >
         <div className="flex flex-col sm:justify-center sm:items-center w-full h-full px-4">
           <div className=" w-full flex sm:justify-center">
@@ -16,7 +45,6 @@ const About = () => {
                 About
               </p>
             </div>
-            <div></div>
           </div>
           <div className="text-xl sm:text-2xl mb-2 sm:mb-10 sm:mt-6">
             <ChangingText />
@@ -29,7 +57,12 @@ const About = () => {
                 className=" w-48 h-48 sm:w-[375px] sm:h-[375px] lg:w-[420px] lg:h-[425px] mb-6 mt-4 sm:mt-2 rounded-lg"
               />
             </div>
-            <div className="h-[150px] md:h-[390px] sm:px-2 overflow-y-scroll sm:w-full sm:pl-0 lg:h-full sm:text-lg">
+            <div
+              className={
+                findWidthValue() +
+                " sm:px-2 overflow-y-scroll sm:w-full lg:h-full sm:text-lg"
+              }
+            >
               <p className="text-[#00d6fe] mb-4 text-2xl font-light">
                 Hello, nice to meet you!
               </p>
@@ -66,6 +99,6 @@ const About = () => {
       </div>
     </>
   );
-}
+};
 
-export default About
+export default About;
