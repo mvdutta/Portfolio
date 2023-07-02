@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ChangingText from "../utilities/ChangingText";
 import camel from "../assets/camel-pic1.jpeg";
 
+
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
@@ -36,7 +37,7 @@ const About = () => {
     <>
       <div
         name="about"
-        className="w-full h-screen bg-stone-950 text-gray-300 font-comme pt-28 md:pt-0"
+        className="overflow-hidden w-full h-screen bg-stone-950 text-gray-300 font-comme pt-28 md:pt-0"
       >
         <div className="flex flex-col sm:justify-center sm:items-center w-full h-full px-4">
           <div className=" w-full flex sm:justify-center">
