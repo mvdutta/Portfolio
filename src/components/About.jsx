@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ChangingText from "../utilities/ChangingText";
 import camel from "../assets/camel-pic1.jpeg";
 
+
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
