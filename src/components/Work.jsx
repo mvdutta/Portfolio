@@ -95,7 +95,7 @@ const Work = () => {
                     </button>
                   </a>
                   <a
-                    href="https://parkers-pets-capstone-i7vkj7u7h-mvdutta.vercel.app/"
+                    href="parkers-pets-capstone.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
