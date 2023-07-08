@@ -95,6 +95,15 @@ const Work = () => {
                     </button>
                   </a>
                   <a
+                    href="https://parkers-pets-capstone-i7vkj7u7h-mvdutta.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-800 font-bold text-lg">
+                      Try It
+                    </button>
+                  </a>
+                  <a
                     href="https://github.com/mvdutta/Parkers-Pets-Capstone"
                     target="_blank"
                     rel="noopener noreferrer"
